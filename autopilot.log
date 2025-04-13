@@ -1,0 +1,1433 @@
+2025-04-11 23:36:13,732 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:36:21,181 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-11 23:36:27,970 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:36:28,080 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:36:28,081 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:36:28,506 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:36:29,177 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:36:30,181 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:36:30,734 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:36:31,193 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:36:32,196 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:36:32,906 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:36:32,907 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:36:32,908 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:36:33,202 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:36:33,663 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:36:34,205 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:36:34,283 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:36:34,464 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:36:35,212 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:36:36,218 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:36:37,225 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:36:38,231 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:36:39,237 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:36:40,243 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:36:41,263 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:36:41,565 - autopilot - INFO - QUESTO LO METTO IOOOOOOOOOOOOOOOOOOOOOOOOOO
+2025-04-11 23:36:47,280 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:37:12,263 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:37:12,269 - autopilot - INFO - QUESTO LO METTO IOOOOOOOOOOOOOOOOOOOOOOOOOO
+2025-04-11 23:38:32,521 - autopilot - INFO - QUESTO LO METTO IOOOOOOOOOOOOOOOOOOOOOOOOOO
+2025-04-11 23:40:29,885 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:40:29,886 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:40:32,588 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:40:32,696 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:40:32,696 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:40:33,123 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:40:33,761 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:40:34,772 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:40:35,342 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:40:35,776 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:40:36,785 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:40:37,599 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:40:37,600 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:40:37,602 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:40:37,791 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:40:38,327 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:40:38,796 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:40:38,916 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:40:39,069 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:40:39,800 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:40:40,803 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:40:41,807 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:40:42,811 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:40:43,815 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:40:44,820 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:40:45,827 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:40:46,635 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:40:46,636 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:40:51,745 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:41:16,701 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:46:34,885 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:46:34,885 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:46:34,887 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:46:34,887 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:46:37,653 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:46:37,653 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:46:37,763 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:46:37,763 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:46:37,764 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:46:37,764 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:46:38,203 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:46:38,203 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:46:38,857 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:38,857 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:39,865 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:39,865 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:40,448 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:46:40,448 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:46:40,872 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:40,872 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:41,877 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:41,877 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:42,648 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:46:42,648 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:46:42,651 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:46:42,651 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:46:42,651 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:46:42,651 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:46:42,882 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:42,882 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:43,347 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:46:43,347 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:46:43,886 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:43,886 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-11 23:46:43,957 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:46:43,957 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:46:44,111 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:46:44,111 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:46:44,891 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:44,891 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:45,897 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:45,897 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:46,900 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:46,900 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:47,904 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:47,904 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:48,907 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:48,907 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:49,912 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:49,912 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:50,916 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:50,916 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:46:51,605 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:46:51,605 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:46:51,606 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:46:51,606 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:46:56,657 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:46:56,657 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:47:21,697 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:47:21,697 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:51:20,181 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:51:20,181 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:51:20,182 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:51:20,182 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:51:25,282 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:51:25,282 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:51:50,290 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:51:50,290 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:51:50,965 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:51:50,965 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:51:50,965 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:51:50,965 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:51:56,055 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:51:56,055 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:52:10,417 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:10,417 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:10,418 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:10,418 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:13,075 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:13,075 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:13,076 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:13,076 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:48,949 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:48,949 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:48,950 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:48,950 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:52,276 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:52,276 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:52:52,277 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:52,277 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:52:52,966 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:52:52,966 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:52:52,968 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:52:52,968 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:52:54,024 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:54,024 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:54,530 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:52:54,530 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:52:55,029 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:55,029 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:56,035 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:56,035 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:56,768 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:52:56,768 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:52:56,768 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:52:56,768 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:52:56,768 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:52:56,768 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:52:57,040 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:57,040 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:57,483 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:52:57,483 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:52:58,049 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:58,049 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:58,106 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:52:58,106 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:52:58,277 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:52:58,277 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:52:59,066 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:52:59,066 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:53:00,070 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:00,070 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:01,074 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:01,074 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:02,077 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:02,077 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:03,081 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:03,081 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:04,085 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:04,085 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:05,089 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:05,089 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:53:06,515 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:53:06,515 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:53:06,516 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:53:06,516 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:53:11,599 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:53:11,599 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:53:36,609 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:53:36,609 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:54:32,839 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:54:32,839 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:54:32,840 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:54:32,840 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:54:33,433 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:54:33,433 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:54:33,435 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:54:33,435 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:54:35,648 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:54:35,648 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:54:35,763 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:54:35,763 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:54:35,764 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:54:35,764 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:54:36,183 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:54:36,183 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:54:36,816 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:36,816 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:37,820 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:37,820 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:38,464 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:54:38,464 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:54:38,518 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:54:38,518 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:54:38,823 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:38,823 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:39,847 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:39,847 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:40,717 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:54:40,717 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:54:40,720 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:54:40,720 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:54:40,722 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:54:40,722 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:54:40,851 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:40,851 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:41,435 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:54:41,435 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:54:41,857 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:41,857 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-11 23:54:42,054 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:54:42,054 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:54:42,240 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:54:42,240 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:54:42,862 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:42,862 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:43,866 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:43,866 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:44,870 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:44,870 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:45,875 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:45,875 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:46,879 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:46,879 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:47,884 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:47,884 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:48,887 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:54:48,887 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:55:03,511 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:55:03,511 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:56:30,370 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:56:30,370 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:56:30,371 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:56:30,371 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:56:30,948 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:56:30,948 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:56:30,948 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:56:30,948 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:56:33,122 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:56:33,122 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:56:33,246 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:56:33,246 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:56:33,246 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:56:33,246 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:56:33,690 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:56:33,690 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:56:34,336 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:34,336 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:35,341 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:35,341 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:35,966 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:56:35,966 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:56:36,028 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:56:36,028 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:56:36,347 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:36,347 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:37,352 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:37,352 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:38,109 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:56:38,109 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:56:38,113 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:56:38,113 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:56:38,114 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:56:38,114 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:56:38,360 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:38,360 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:38,837 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:56:38,837 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:56:39,364 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:39,364 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-11 23:56:39,467 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:56:39,467 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:56:39,628 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:56:39,628 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:56:40,370 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:40,370 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:41,375 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:41,375 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:42,381 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:42,381 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:43,388 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:43,388 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:44,394 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:44,394 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:45,398 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:45,398 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:46,401 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:56:46,401 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-11 23:57:00,996 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:57:00,996 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-11 23:59:28,325 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:28,325 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:28,325 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:28,325 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:28,327 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:28,327 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:28,327 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:28,327 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:33,386 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:33,386 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:33,386 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:33,386 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:42,374 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-11 23:59:42,374 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-11 23:59:42,374 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-11 23:59:42,374 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-11 23:59:47,386 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:47,386 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:47,386 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:47,386 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:47,387 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:47,387 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:47,387 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:47,387 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:48,013 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:48,013 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:48,013 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:48,013 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-11 23:59:48,014 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:48,014 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:48,014 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:48,014 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-11 23:59:50,156 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:50,156 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:50,156 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:50,156 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:50,158 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '10'
+2025-04-11 23:59:50,158 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '10'
+2025-04-11 23:59:50,158 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '10'
+2025-04-11 23:59:50,158 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '10'
+2025-04-11 23:59:50,267 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:59:50,267 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-11 23:59:50,267 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:59:50,267 - autopilot - CRITICAL - Frame: QUAD
+2025-04-11 23:59:50,707 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:59:50,707 - autopilot - CRITICAL - Calibrating barometer
+2025-04-11 23:59:51,358 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:51,358 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:51,358 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:51,358 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:52,361 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:52,361 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:52,361 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:52,361 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:52,921 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:59:52,921 - autopilot - CRITICAL - Initialising APM...
+2025-04-11 23:59:53,126 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:53,126 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:53,126 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:53,126 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-11 23:59:53,366 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:53,366 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:53,366 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:53,366 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:54,371 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:54,371 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:54,371 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:54,371 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:55,125 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:59:55,125 - autopilot - CRITICAL - barometer calibration complete
+2025-04-11 23:59:55,125 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:59:55,125 - autopilot - CRITICAL - GROUND START
+2025-04-11 23:59:55,126 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:59:55,126 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:59:55,126 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:59:55,126 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-11 23:59:55,377 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:55,377 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:55,377 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:55,377 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:55,817 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:59:55,817 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:59:55,817 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:59:55,817 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-11 23:59:56,381 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:56,381 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:56,381 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:56,381 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-11 23:59:56,413 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:56,413 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:56,413 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:56,413 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-11 23:59:56,563 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:59:56,563 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:59:56,563 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:59:56,563 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-11 23:59:57,387 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:57,387 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:57,387 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:58,393 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:58,393 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:58,393 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:58,393 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:59,404 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:59,404 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:59,404 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-11 23:59:59,404 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:00,408 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:00,408 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:00,408 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:00,408 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:01,411 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:01,411 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:01,411 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:01,411 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:02,415 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:02,415 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:02,415 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:02,415 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:03,429 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:03,429 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:03,429 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:03,429 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 00:00:18,093 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 00:00:18,093 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 00:00:18,093 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 00:00:18,093 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 00:00:45,247 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 00:00:45,247 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 00:00:45,247 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 00:00:45,247 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 14:47:27,891 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:27,891 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:27,891 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:27,892 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:27,891 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:27,892 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:27,892 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:27,892 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:28,641 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:28,641 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:28,641 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:28,642 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:28,642 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:28,642 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:28,641 - dronekit - INFO - CONNECTING TO THE VEHICLE in SITL Mode
+2025-04-12 14:47:28,642 - dronekit - INFO - Connecting to vehicle on: tcp:127.0.0.1:5760
+2025-04-12 14:47:30,485 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:30,485 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:30,485 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:30,485 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:30,598 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 14:47:30,598 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 14:47:30,599 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 14:47:30,599 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 14:47:31,001 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 14:47:31,001 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 14:47:31,674 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:31,674 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:31,674 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:31,674 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:32,677 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:32,677 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:32,677 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:32,677 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:32,990 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 14:47:32,990 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 14:47:33,681 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:33,681 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:33,681 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:33,681 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:33,698 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 14:47:33,698 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 14:47:33,698 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 14:47:33,698 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 14:47:34,685 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:34,685 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:34,685 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:34,685 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:34,955 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 14:47:34,955 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 14:47:34,956 - autopilot - CRITICAL - GROUND START
+2025-04-12 14:47:34,956 - autopilot - CRITICAL - GROUND START
+2025-04-12 14:47:34,957 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 14:47:34,957 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 14:47:34,957 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 14:47:34,957 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 14:47:35,637 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 14:47:35,637 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 14:47:35,637 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 14:47:35,637 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 14:47:35,688 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:35,688 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:35,688 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:35,688 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:36,225 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:36,225 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:36,225 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:36,225 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 14:47:36,378 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 14:47:36,378 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 14:47:36,378 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 14:47:36,378 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 14:47:36,692 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:36,692 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:36,692 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:36,692 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:37,695 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:37,695 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:37,695 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:37,695 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 14:47:38,700 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:38,700 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:38,700 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:38,700 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:39,704 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:39,704 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:39,704 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:39,704 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:40,707 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:40,707 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:40,707 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:40,707 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:41,712 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:41,712 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:41,712 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:41,712 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:42,717 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:42,717 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:42,717 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:42,717 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 14:47:58,719 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 14:47:58,719 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 14:47:58,719 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 14:47:58,719 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 16:02:54,337 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 16:02:54,337 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 16:02:59,138 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:02:59,138 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:02:59,249 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:02:59,249 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:02:59,249 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:02:59,249 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:02:59,657 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:02:59,657 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:03:00,296 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:00,296 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:01,301 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:01,301 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:01,697 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:03:01,697 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:03:02,219 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 16:03:02,219 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 16:03:02,305 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:02,305 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:03,311 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:03,311 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:03,694 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:03:03,694 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:03:03,696 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:03:03,696 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:03:03,697 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:03:03,697 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:03:04,317 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:04,317 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:04,370 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:03:04,370 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:03:04,945 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:03:04,945 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:03:05,105 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:03:05,105 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:03:05,322 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:05,322 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:06,335 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:06,335 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:03:07,340 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:07,340 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:08,346 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:08,346 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:09,350 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:09,350 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:10,353 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:10,353 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:11,357 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:11,357 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:03:27,226 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 16:03:27,226 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+    ~~^^^^^^
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\__init__.py", line 1370, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+                       self._heartbeat_error)
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+2025-04-12 16:03:31,084 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 16:03:31,084 - dronekit.mavlink - ERROR - Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 218, in mavlink_thread_in
+    msg = self.master.recv_msg()
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 477, in recv_msg
+    s = self.recv(n)
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\pymavlink\mavutil.py", line 1281, in recv
+    data = self.port.recv(n)
+ConnectionResetError: [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\AppData\Roaming\Python\Python313\site-packages\dronekit\mavlink.py", line 222, in mavlink_thread_in
+    raise APIException('Connection aborting during send')
+dronekit.APIException: Connection aborting during send
+2025-04-12 16:03:41,015 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:03:41,015 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:03:41,128 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:03:41,128 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:03:41,128 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:03:41,128 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:03:41,537 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:03:41,537 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:03:42,169 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:42,169 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:43,172 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:43,172 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:43,695 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:03:43,695 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:03:44,178 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:44,178 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:45,184 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:45,184 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:45,832 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:03:45,832 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:03:45,833 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:03:45,833 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:03:45,833 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:03:45,833 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:03:46,187 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:46,187 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:46,522 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:03:46,522 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:03:47,099 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:03:47,099 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:03:47,192 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:47,192 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,attitude,gps_0
+2025-04-12 16:03:47,259 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:03:47,259 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:03:48,197 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:48,197 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:49,202 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:49,202 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:50,205 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:50,205 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:51,210 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:51,210 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:52,214 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:52,214 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:53,220 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:03:53,220 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:05:50,902 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:05:50,902 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:05:51,011 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:05:51,011 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:05:51,012 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:05:51,012 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:05:51,431 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:05:51,431 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:05:52,058 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:52,058 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:53,062 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:53,062 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:53,623 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:05:53,623 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:05:54,066 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:54,066 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:55,072 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:55,072 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:55,711 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:05:55,711 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:05:55,712 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:05:55,712 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:05:55,713 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:05:55,713 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:05:56,086 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:56,086 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:56,408 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:05:56,408 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:05:56,985 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:05:56,985 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:05:57,092 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:57,092 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:05:57,154 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:05:57,154 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:05:58,103 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:05:58,103 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:05:59,108 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:05:59,108 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:00,116 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:00,116 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:01,119 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:01,119 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:02,126 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:02,126 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:03,132 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:03,132 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:06:52,696 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:06:52,696 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:06:52,806 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:06:52,806 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:06:52,806 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:06:52,806 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:06:53,215 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:06:53,215 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:06:53,892 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:53,892 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:54,898 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:54,898 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:55,216 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:06:55,216 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:06:55,902 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:55,902 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:56,907 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:56,907 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:57,198 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:06:57,198 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:06:57,199 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:06:57,199 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:06:57,200 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:06:57,200 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:06:57,870 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:06:57,870 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:06:57,914 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:57,914 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:58,449 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:06:58,449 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:06:58,599 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:06:58,599 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:06:58,917 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:58,917 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:59,955 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:06:59,955 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:07:00,961 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:00,961 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:01,968 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:01,968 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:02,974 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:02,974 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:03,977 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:03,977 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:04,995 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:07:04,995 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:08:10,743 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:08:10,743 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:08:10,853 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:08:10,853 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:08:10,853 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:08:10,853 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:08:11,265 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:08:11,265 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:08:11,911 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:11,911 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:12,915 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:12,915 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:13,316 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:08:13,316 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:08:13,920 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:13,920 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:14,924 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:14,924 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:15,317 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:08:15,317 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:08:15,322 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:08:15,322 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:08:15,324 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:08:15,324 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:08:15,928 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:15,928 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:16,002 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:08:16,002 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:08:16,583 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:08:16,583 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:08:16,734 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:08:16,734 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:08:16,932 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:16,932 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:17,938 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:17,938 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:08:18,942 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:18,942 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:19,946 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:19,946 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:20,958 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:20,958 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:21,968 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:21,968 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:22,972 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:08:22,972 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:41,282 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:13:41,282 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:13:41,393 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:13:41,393 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:13:41,393 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:13:41,393 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:13:41,805 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:13:41,805 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:13:42,450 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:42,450 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:43,454 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:43,454 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:43,832 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:13:43,832 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:13:44,459 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:44,459 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:45,466 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:45,466 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:45,831 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:13:45,831 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:13:45,834 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:13:45,834 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:13:45,834 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:13:45,834 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:13:46,471 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:46,471 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:46,502 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:13:46,502 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:13:47,079 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:13:47,079 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:13:47,222 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:13:47,222 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:13:47,476 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:47,476 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:48,479 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:48,479 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude,parameters
+2025-04-12 16:13:49,486 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:49,486 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:50,490 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:50,490 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:51,494 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:51,494 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:52,501 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:52,501 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:53,508 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:13:53,508 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:14:52,469 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:14:52,469 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:14:52,582 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:14:52,582 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:14:52,583 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:14:52,583 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:14:52,994 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:14:52,994 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:14:53,675 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:53,675 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:54,679 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:54,679 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:55,132 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:14:55,132 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:14:55,685 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:55,685 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:56,688 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:56,688 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:57,245 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:14:57,245 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:14:57,248 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:14:57,248 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:14:57,249 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:14:57,249 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:14:57,692 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:57,692 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:57,930 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:14:57,930 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:14:58,503 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:14:58,503 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:14:58,656 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:14:58,656 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:14:58,695 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:58,695 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:14:59,700 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:14:59,700 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:00,705 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:00,705 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:01,714 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:01,714 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:02,732 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:02,732 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:03,737 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:03,737 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:04,742 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:15:04,742 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:06,739 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:20:06,739 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:20:06,849 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:20:06,849 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:20:06,849 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:20:06,849 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:20:07,260 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:20:07,260 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:20:07,901 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:07,901 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:08,916 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:08,916 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:09,372 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:20:09,372 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:20:09,920 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:09,920 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:10,926 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:10,926 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:11,464 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:20:11,464 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:20:11,466 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:20:11,466 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:20:11,466 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:20:11,466 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:20:11,931 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:11,931 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:12,138 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:20:12,138 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:20:12,714 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:20:12,714 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:20:12,882 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:20:12,882 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:20:12,934 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:12,934 - dronekit - DEBUG - Still waiting for data from vehicle: parameters,gps_0,attitude
+2025-04-12 16:20:13,938 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:13,938 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:14,942 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:14,942 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:15,987 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:15,987 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:16,991 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:16,991 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:17,993 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:17,993 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:19,002 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:20:19,002 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:22:18,872 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:22:18,872 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:22:18,873 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '45'
+2025-04-12 16:22:18,873 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '45'
+2025-04-12 16:22:18,983 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:22:18,983 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:22:18,984 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:22:18,984 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:22:19,394 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:22:19,394 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:22:20,040 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:20,040 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:21,057 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:21,057 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:21,516 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:22:21,516 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:22:22,072 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:22,072 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:23,078 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:23,078 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:23,609 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:22:23,609 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:22:23,610 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:22:23,610 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:22:23,610 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:22:23,610 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:22:24,113 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:24,113 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:24,279 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:22:24,279 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:22:24,845 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:22:24,845 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:22:25,018 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:22:25,018 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:22:25,119 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:25,119 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,parameters,gps_0
+2025-04-12 16:22:26,123 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:26,123 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:27,130 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:27,130 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:28,136 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:28,136 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:29,170 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:29,170 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:30,172 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:30,172 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:31,188 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:31,188 - dronekit - DEBUG - Still waiting for data from vehicle: attitude,gps_0
+2025-04-12 16:22:46,991 - autopilot - ERROR - ARMING MOTORS
+2025-04-12 16:22:46,991 - autopilot - ERROR - ARMING MOTORS
+2025-04-12 16:22:46,992 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:22:46,992 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:22:46,993 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:22:46,993 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:22:47,667 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:22:47,667 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:22:47,971 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 16:22:47,971 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 16:22:48,270 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:22:48,270 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:22:48,271 - dronekit - INFO - ...link restored.
+2025-04-12 16:22:48,271 - dronekit - INFO - ...link restored.
+2025-04-12 16:22:48,273 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:22:48,273 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:22:57,769 - autopilot - ERROR - DISARMING MOTORS
+2025-04-12 16:22:57,769 - autopilot - ERROR - DISARMING MOTORS
+2025-04-12 16:28:21,456 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:28:21,456 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:28:21,572 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:28:21,572 - autopilot - CRITICAL - APM:Copter V3.3 (d6053245)
+2025-04-12 16:28:21,573 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:28:21,573 - autopilot - CRITICAL - Frame: QUAD
+2025-04-12 16:28:21,983 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:28:21,983 - autopilot - CRITICAL - Calibrating barometer
+2025-04-12 16:28:22,619 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:22,619 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:23,629 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:23,629 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:24,070 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:28:24,070 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:28:24,632 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:24,632 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:25,636 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:25,636 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:26,131 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:28:26,131 - autopilot - CRITICAL - barometer calibration complete
+2025-04-12 16:28:26,132 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:28:26,132 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:28:26,133 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:28:26,133 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:28:26,643 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:26,643 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:26,804 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:28:26,804 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:28:27,377 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:28:27,377 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:28:27,547 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:28:27,547 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '32'
+2025-04-12 16:28:27,651 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:27,651 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,parameters,attitude
+2025-04-12 16:28:28,701 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:28,701 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:29,706 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:29,706 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:30,717 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:30,717 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:31,720 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:31,720 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:32,724 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:32,724 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:33,733 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:28:33,733 - dronekit - DEBUG - Still waiting for data from vehicle: gps_0,attitude
+2025-04-12 16:29:06,622 - autopilot - ERROR - ARMING MOTORS
+2025-04-12 16:29:06,622 - autopilot - ERROR - ARMING MOTORS
+2025-04-12 16:29:06,623 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:29:06,623 - autopilot - CRITICAL - GROUND START
+2025-04-12 16:29:06,623 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:29:06,623 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '73'
+2025-04-12 16:29:07,326 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:29:07,326 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '42'
+2025-04-12 16:29:07,580 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 16:29:07,580 - dronekit - WARNING - Link timeout, no heartbeat in last 5 seconds
+2025-04-12 16:29:07,934 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:29:07,934 - dronekit.mavlink - DEBUG - mav recv error: invalid MAVLink prefix '13'
+2025-04-12 16:29:07,936 - dronekit - INFO - ...link restored.
+2025-04-12 16:29:07,936 - dronekit - INFO - ...link restored.
+2025-04-12 16:29:07,939 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:29:07,939 - autopilot - CRITICAL - Initialising APM...
+2025-04-12 16:29:17,532 - autopilot - ERROR - DISARMING MOTORS
+2025-04-12 16:29:17,532 - autopilot - ERROR - DISARMING MOTORS

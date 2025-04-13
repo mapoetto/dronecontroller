@@ -7,6 +7,17 @@ import queue
 import logging.handlers
 import threading
 from typing import Dict, Any, Callable, Optional, List
+from datetime import datetime
+
+
+
+def custom_log(txt):
+
+    # Crea un timestamp
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+    with open('dronecontroller.log', 'a') as file:
+        file.write(timestamp+" - "+txt+'\n')
 
 
 class HeavyTaskThread(threading.Thread):
@@ -40,7 +51,6 @@ class HeavyTaskThread(threading.Thread):
 class DroneKitController:
     def __init__(self, connection_string,baud_rate,sitl=False):
 
-
         self.flying_controller_thread = None
 
 
@@ -55,7 +65,8 @@ class DroneKitController:
 
     #Callback function for "any" parameter
     def any_parameter_callback(self, attr_name, value):
-        print("attr_name->"+str(attr_name)+" value->"+str(value))
+        custom_log("attr_name->"+str(attr_name)+" value->"+str(value))
+
 
 
 
@@ -81,11 +92,11 @@ class DroneKitController:
         """Connette il drone e ritorna l'oggetto vehicle."""
         try:
             if self.sitl_mode:
-                print("CONNECTING TO THE VEHICLE in SITL Mode")
-                print("Connecting to vehicle on: %s" % (self.my_sitl.connection_string(),))
+                custom_log("CONNECTING TO THE VEHICLE in SITL Mode")
+                custom_log("Connecting to vehicle on: %s" % (self.my_sitl.connection_string(),))
                 #self.vehicle = connect(self.my_sitl.connection_string(), wait_ready=True)
                 self.vehicle = connect('tcp:127.0.0.1:5760', wait_ready=True)
-                print(".>"+str(vehicle))
+                custom_log(".>"+str(vehicle))
                     
 
                 #Add observer for the vehicle's any/all parameters parameter (note wildcard string ``'*'``)
@@ -97,13 +108,13 @@ class DroneKitController:
         except Exception as e:
             return f"Errore di connessione: {str(e)}"
     
-    def get_telemetry_bloccante(self):
+    def get_telemetry(self):
         """Restituisce la telemetria del drone in formato JSON."""
         if self.vehicle is None:
             return json.dumps({"error": "Drone non connesso"})
         
         telemetry_data = {
-            "global_location": self.vehicle.location.global_frame, #posizione assoluta del drone, nel mondo
+            "global_location": self.vehicle.location.global_frame.lat, #posizione assoluta del drone, nel mondo
             "local_location": self.vehicle.location.local_frame ,
             "attitude": str(self.vehicle.attitude), #contiene yaw,pitch,roll
             "relative_location": self.vehicle.location.global_relative_frame , #coordinate relative al punto di arming/decollo
@@ -120,7 +131,7 @@ class DroneKitController:
             "armed": self.vehicle.armed
         }
 
-        return json.dumps(telemetry_data, indent=4)
+        return json.dumps(str(telemetry_data), indent=4)
     
 
 
@@ -130,28 +141,30 @@ class DroneKitController:
         return self.execute_task(func_name=self.arm_and_takeoff_bloccante,  args=(target_altitude,))
 
     def arm_and_takeoff_bloccante(self, target_altitude):
+        custom_log(self.get_telemetry())
         """Arma il drone e lo fa decollare all'altitudine desiderata."""
         if self.vehicle is None:
             return "Drone non connesso"
         
-        print("Arming motors...")
+        custom_log("Arming motors...")
         self.vehicle.mode = VehicleMode("GUIDED")
         self.vehicle.armed = True
         
         while not self.vehicle.armed:
-            print("Waiting for arming...")
+            custom_log("Waiting for arming...")
             time.sleep(1)
         
-        print("Taking off!")
+        custom_log("Taking off!")
         self.vehicle.simple_takeoff(target_altitude)
         
         while True:
-            print(f"Altitude: {self.vehicle.location.global_relative_frame.alt}")
+            custom_log(f"Altitude: {self.vehicle.location.global_relative_frame.alt}")
+            custom_log(self.get_telemetry())
             if self.vehicle.location.global_relative_frame.alt >= target_altitude * 0.95:
-                print("Target altitude reached")
+                custom_log("Target altitude reached")
                 break
             time.sleep(1)
-
+        
         return "Takeoff complete"
     
     def land_bloccante(self):
@@ -159,7 +172,7 @@ class DroneKitController:
         if self.vehicle is None:
             return "Drone non connesso"
         
-        print("Landing...")
+        custom_log("Landing...")
         self.vehicle.mode = VehicleMode("LAND")
         return "Landing initiated"
     
@@ -168,7 +181,7 @@ class DroneKitController:
         if self.vehicle is None:
             return "Drone non connesso"
         
-        print(f"Going to {lat}, {lon}, {alt}")
+        custom_log(f"Going to {lat}, {lon}, {alt}")
         point = LocationGlobalRelative(lat, lon, alt)
         self.vehicle.simple_goto(point)
         return f"Navigating to {lat}, {lon}, {alt}"

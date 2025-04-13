@@ -5,8 +5,6 @@ from controllers.UAV_Controller import *
 from controllers.UAV_Camera import *
 from controllers.DroneKitController import *
 
-import threading
-
 import queue
 
 import logging
@@ -56,13 +54,10 @@ USERS = {
 }
 
 CONFIG_FILE = 'DRONE_PARAMS.json'
+DRONE_STATUS_FILE = 'DRONE_STATUS.json'
 
 
-flying_controller_thread = None
-
-
-
-def load_config():
+def load_config(CONFIG_FILE):
     try:
         with open(CONFIG_FILE, 'r') as f:
             config = json.load(f)
@@ -74,17 +69,27 @@ def save_config(config):
     with open(CONFIG_FILE, 'w') as f:
         json.dump(config, f, indent=4)
 
+
+
+# Rotta per leggere tutta la configurazione e passarla al frontend
+@app.route('/api/drone_status', methods=['GET'])
+@auth.login_required
+def get_drone_status():
+    drone_status = load_config(CONFIG_FILE)
+    return jsonify(config)
+
+
 # Rotta per leggere tutta la configurazione e passarla al frontend
 @app.route('/api/drone_params', methods=['GET'])
 @auth.login_required
 def get_config():
-    config = load_config()
+    config = load_config(CONFIG_FILE)
     return jsonify(config)
 
 @app.route('/api/update_config', methods=['POST'])
 @auth.login_required
 def update_config():
-    config = load_config()
+    config = load_config(CONFIG_FILE)
     
     if not request.json:
         return jsonify({'status': 'error', 'message': 'Missing JSON body'}), 400
@@ -108,14 +113,14 @@ def verify_password(username, password):
 @auth.login_required  # Protegge la rotta con autenticazione
 def home():
 
-    config = load_config()
+    config = load_config(CONFIG_FILE)
 
     if mydrone:
         return render_template('index.html', config_list_parameters=config)
     return render_template('templates/error.html', connection=str(CONNECTION) ) 
 
 
-
+'''
 @app.route('/console_updates')
 @auth.login_required  # Protegge la rotta con autenticazione
 def console_log():
@@ -126,7 +131,7 @@ def console_log():
     connect(connection_string,baud_rate)
 
     return render_template('index.html')
-
+'''
 
 
 @app.route('/api/takeoff')
@@ -143,6 +148,17 @@ def take_off():
 def log_autopilot():
 
     last_rows = tail_optimized("autopilot.log", n=100, buffer_size=1024)
+    last_rows.reverse()
+    last_rows = "\n".join(last_rows)
+
+    return last_rows, 200, {'Content-Type': 'text/plain'}
+
+
+@app.route('/log/dronekitcontroller')
+@auth.login_required  # Protegge la rotta con autenticazione
+def log_dronecontroller():
+
+    last_rows = tail_optimized("dronecontroller.log", n=100, buffer_size=1024)
     last_rows.reverse()
     last_rows = "\n".join(last_rows)
 
@@ -182,7 +198,7 @@ def mydrone_connecting():
 
 if __name__ == "__main__":
 
-    DRONE_PARAMS = load_config()
+    DRONE_PARAMS = load_config(CONFIG_FILE)
 
     CONNECTION = {}
 
@@ -195,13 +211,6 @@ if __name__ == "__main__":
     print("MyDrone Connecting...")
     
     mydrone.connect_vehicle()
-
-    '''
-    flying_controller_thread = threading.Thread(target=mydrone_connecting)
-    flying_controller_thread.start()
-
-
-    '''
 
 
 
